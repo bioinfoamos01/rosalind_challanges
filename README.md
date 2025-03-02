@@ -1,4 +1,4 @@
-# rosalind_challanges
+# rosalind_challenges
 [![linkedin logo](https://rosalind.info/static/img/logo.png?v=1637535648)](https://rosalind.info/problems/list-view/)
 ### Rosalind é uma plataforma de aprendizado de bioinformática por meio de resolução de problemas.
 - Aqui estão desafios que solucionei utilizando programação Python.
