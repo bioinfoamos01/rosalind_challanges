@@ -1,2 +1,31 @@
 # rosalind_challanges
-Compilado das soluções dos problemas de Rosalind (desafios bioinformática)
+[![linkedin logo](https://rosalind.info/static/img/logo.png?v=1637535648)](https://rosalind.info/problems/list-view/)
+### Rosalind é uma plataforma de aprendizado de bioinformática por meio de resolução de problemas.
+- Aqui estão desafios que solucionei utilizando programação Python.
+
+## #Contando nucleotídeos do DNA
+- OBJETIVO: Dada uma sequencia de DNA, retornar a contagem de "A", "C", "G", "T", respectivamente e separados por um espaço.
+```
+SEQUÊNCIA: "CATACACTCTGGATCTATACCGCCGTGTCTCATATCCACAGGAAGCTATGTACCTAGCAAAGGGTTGTCTTCAGATATAGTTGGCACTCGGAACTGGTTAAGCAGCAGACTTAACCCGCTGAGCCATGTGTCCTCCACGTCAACCAACTATGTCGAAGAACTAAGCGTGGAATAGCGATATTTTCCCCCGATCGCCTACGGACCGGGCCGAAACCGTTGCTCAACGGAGTTACTAAAACCAACGTTCTACACCTGAGCATCAACCGGCCGGGTGAGTTGCCAGTACACTCTGATAAGCGCGCGCCGTGGCGAACCCCTAAGGCCATGTTAGCTTCGCGCCTTTAGTAGAATGGAGCGGGGAAGCGGCACAAAAAGATAGTATTTCGTCTTATCGTCGCCTAGTTCGTAGAGATCACTACTAGTTGTAGGGACTGAAACGCTATGGTTGGCTGCGGATCCTCGAGGTAAAACCCTTGGGCTGATTAATGCCTATATTGTATACCCAATGAACGATAATCGTGGAGTGCACGAATTGAAACGATCTAATGATGGATGTGGAACCCAACGTGCATCTCCAAAACTAGATTTATTTACGCGCAGCGATCGGGGAAAGCGACCATTCTTCCAATTGGCCAACTCCTGGGCCGGGCTTCCACATCCCGTTGTGTAGATCAGGATAGGACTTATGCCCATCCCCGGGGTTGCATGGTCTCAGCCACATTTTCCCGAGTGGCTTGGTAAACGTTTAGTCAGCTTTTCCAGTTAAGTTAAGCACATCTTGCTCGACCCCACACCCATAACCGAATCACCCACCCTTAGGAGATTGTACCGCGATCGCTTCTAGACCCTAGCCCGCACGCACCGTTACTCCGGGCCCTTTTGCGTCGCTTTTCACCACTCTCACCTTTTCTCAAGTTTATAACGTGTTGCAGCAACGGCAATCCACGGATTTCTGCCCACATAGCCAGGGACATGACT"
+
+```
+- Pipeline desenvolvido:
+```
+#Entrada da sequência do usuário e criação do dicionário com os quatro nucleotídeos
+sample = str(input("Digite a sequência de DNA para contagem de A, C, G, T"))
+sequence = list(sample)
+dict_count = {"A":0, "C":0, "G":0, "T":0}
+
+#Iteração da sequencia e contagem de cada nucleotídeo da sequência
+for i in sequence:
+  for k,v in dict_count.items():
+    if i == k:
+      dict_count[k] = v+1
+      
+#Resultado da contagem
+print(" ".join(str(i) for i in dict_count.values()))
+```
+- Resultado ✅
+```
+RESPOSTA: 242 270 226 240
+```
