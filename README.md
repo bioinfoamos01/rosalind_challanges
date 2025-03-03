@@ -4,8 +4,9 @@
 - Aqui estão desafios que solucionei utilizando programação Python:
   - [Contar núcleotídeos do DNA](#contar-nucleotídeos-do-dna)
   - [Transcrever DNA em RNA](#transcrever-dna-em-rna)
-  - [Traduzir mRNA em proteína](#traduzir-mrna-em-proteína)
   - [Retornar sequência reversa complementar de DNA](#retornar-sequência-reversa-complementar-de-dna)
+  - [Traduzir mRNA em proteína](#traduzir-mrna-em-proteína)
+ 
 <br><br>
 ## Contar nucleotídeos do DNA
 - Dada uma sequência de DNA, retornar a contagem de "A", "C", "G", "T", respectivamente e separados por um espaço.
